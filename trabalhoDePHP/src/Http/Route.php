@@ -8,10 +8,11 @@
             
         ];
 
-        public static function addRoute($path, $controller){
+        public static function addRoute($path, $controller, $view){
             self::$routes[] = [
                 'path' => $path,
-                'controller' => $controller
+                'controller' => $controller,
+                'view' => $view
             ];
         }
 

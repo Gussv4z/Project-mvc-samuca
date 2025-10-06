@@ -2,10 +2,13 @@
 
     namespace App\Controllers;
 
-    class UserController{
+    use App\Http\Request;
+    use App\Controllers\Controller;
 
-        public function teste(){
-            echo "passou";
+    class UserController extends Controller{
+
+        public function registerCliente(){
+            print_r(Request::post());
         }
     }
 
