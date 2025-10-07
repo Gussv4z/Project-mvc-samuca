@@ -35,14 +35,9 @@
             }
             if(empty($data['cep'])){
                 self::$errors['cep'] = ['message'=> "Campo cep invalido"]; 
-            } else{
-                $response = self::validateCEP($data['cep']);
-                if($response){
-                    self::$errors['infos'] = $response;
-                }
-            }
+            } 
             
-            return true;
+            return empty(self::getErrors());
             
         }
 

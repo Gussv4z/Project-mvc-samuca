@@ -9,5 +9,3 @@
     Router::addRoute('/home', "HomeController@index");
     Router::addRoute('/cadastro/produto', "ProductController@show");
     Router::addRoute('/cadastro/venda', "VendaController@show");
-
-?>

@@ -18,7 +18,6 @@
             <div class="one part">
                 <div class="camp cpf">
 
-                <?php print_r($errors)?>
                     
                     <label for="cpf">CPF:</label>
                     <input type="text" id="cpf" name="cpf" maxlength="15" minlength="11" >

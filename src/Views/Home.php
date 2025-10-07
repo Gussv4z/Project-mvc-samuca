@@ -9,11 +9,15 @@
 </head>
 <body>
     <header>
-        <h1>Explorando o mundo gamer</h1>
+        <h1>Kabao</h1>
     </header>
     <main>
         <section id="intro">
-            <h3>O Mundo dos games</h3>
+            <h2>Bem-vindo à Kabao - Tecnologia ao seu Alcance</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Na Kabao, você encontra tudo o que precisa para estar conectado e atualizado com o mundo da tecnologia. De computadores e notebooks a acessórios, periféricos e gadgets inovadores, nosso objetivo é oferecer produtos de qualidade com preços competitivos e promoções imperdíveis.</p>
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Com a Kabao, comprar é fácil, rápido e seguro. Aproveite nosso atendimento especializado, frete ágil e ofertas exclusivas que tornam cada experiência de compra única. Seja você um gamer, um profissional de tecnologia ou alguém que ama estar por dentro das novidades, a Kabao é o seu destino para tecnologia, inovação e conveniência. Não perca tempo: descubra hoje mesmo nossas promoções e leve para casa os melhores produtos do mercado!</p>
+
         </section>
         <section id="anime-list">
             <h2>Principais produtos</h2>
@@ -29,9 +33,9 @@
         </section>
     </main>
     <footer>
-        <a href="/cadastro/cliente">Cadastro de Clientes</a>
-        <a href="/cadastro/produto">Cadastro de Produtos</a>
-        <a href="/cadastro/venda">Cadastro da Venda</a>
+        <button class="pages"><a href="/cadastro/cliente">Cadastro de Clientes</a></button>
+        <button class="pages"><a href="/cadastro/produto">Cadastro de Produtos</a></button>
+        <button class="pages"><a href="/cadastro/venda">Cadastro da Venda</a></button>
     </footer>
 </body>
 </html>
