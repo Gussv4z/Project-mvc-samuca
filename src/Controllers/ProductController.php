@@ -1,12 +1,14 @@
 <?php
 
     namespace App\Controllers;
-    
+
+    use App\Models\Products;
     use App\Models\ValidateProducts;
+    
 
     class ProductController extends HomeController{
         public function show(){
-            print_r($_POST);
+            
 
             $this->loadView('Cadprod');
 
@@ -30,11 +32,12 @@
                 ];
 
                 $response = self::insert($data);
-                print_r($response);
+                
                 if($response === ""){
-                    header("Location: /home");
+                    Products::insertDB($data);
+                    // header("Location: /home");
                 } else{
-                    var_dump(self::insert($data));
+                    
                 }
                 
             }

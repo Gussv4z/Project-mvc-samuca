@@ -1,24 +1,24 @@
 <?php
 
-    namespace App\Models;
+namespace App\Models;
 
-    class ValidateProducts{
+class ValidateProducts{
 
        
 
-        public static function validateProduct(array $product){
+    public static function validateProduct(array $product){
 
-            $errors = [];
-            foreach($product as $camps){
-                if(empty($camps)){
-                    $errors[] = [
-                        "message" => "Campo invalido"
-                    ];
-                    return $errors;
-                }
-                
+        $errors = [];
+        foreach($product as $camps){
+            if(empty($camps)){
+                $errors[] = [
+                    "message" => "Campo invalido"
+                ];
+                return $errors;
             }
+                
         }
     }
+}
 
 ?>
