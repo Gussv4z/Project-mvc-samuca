@@ -17,7 +17,6 @@ class UserController extends BaseController
             $response = Validate::validate($_POST);
             
             if ($response === true) {
-                echo "passou";
                 $this->loadView('Cadcli', [
                     'message' => 'Usuario cadastrado no sistema com sucesso'
                 ]);

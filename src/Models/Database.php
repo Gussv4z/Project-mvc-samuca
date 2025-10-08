@@ -4,6 +4,10 @@
     use PDO;
     use PDOException;
     class Database{
+        public $pdo;
+        public function __construct(){
+            $this->pdo;
+        }
 
 
         public static function getConnection(){
@@ -19,10 +23,10 @@
             
            try {
                 $pdo = new PDO($dsn,$user,$pass);
-                echo "connected";
+                return $pdo;
+                
             }catch(PDOException $e){
                 echo $e->getMessage();
-                
             };
         }
     }

@@ -6,7 +6,6 @@
 
     class Validate extends DataBase{
         private static $errors = [];
-        private static $infos = [];
         public static function validate(array $data){
             if(empty($data['cpf'])){
                 self::$errors['cpf'] = ['message' => "Campo cpf invalido"];
@@ -36,7 +35,17 @@
             if(empty($data['cep'])){
                 self::$errors['cep'] = ['message'=> "Campo cep invalido"]; 
             } 
-            
+
+            if(empty(self::getErrors())){
+                 $user = [
+                'name' => $data['nome'],
+                'cpf' => $data['cpf']
+            ];
+                
+
+                self::insertOnDB($user);
+            }
+           
             return empty(self::getErrors());
             
         }
@@ -44,12 +53,18 @@
         public static function getErrors(){
             return self::$errors;
         }
-        
-        public static function getInfos(){
-            return self::$infos;
-        }
 
-        
+        public static function insertOnDB(array $data){
+            $pdo = self::getConnection();
+            $sql = 'INSERT INTO cadcli (cpf, nome) VALUES (?, ?)';
+            $stmt = $pdo->prepare($sql);
+            $values = [$data['cpf'], $data['name']];
+            $executou = $stmt->execute($values);
+
+            if($executou){
+                return;
+            }
+        }
 
 
         public static function validateCEP($cep){

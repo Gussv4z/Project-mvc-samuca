@@ -39,8 +39,19 @@ footer{
 td{
     height: 200px;
     width: 300px;
-    background-color: #dcdcdc;
+    background-color: #fff;
     border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+td > img{
+    height:200px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+td:hover{
+    scale: 1.02;
 }
 
 
@@ -57,4 +68,8 @@ td{
 .pages > a{
     color: #fff;
     text-decoration: none;
+}
+
+#product-list > h2{
+    color: #fff;
 }

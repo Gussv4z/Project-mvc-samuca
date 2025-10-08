@@ -19,13 +19,13 @@
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Com a Kabao, comprar é fácil, rápido e seguro. Aproveite nosso atendimento especializado, frete ágil e ofertas exclusivas que tornam cada experiência de compra única. Seja você um gamer, um profissional de tecnologia ou alguém que ama estar por dentro das novidades, a Kabao é o seu destino para tecnologia, inovação e conveniência. Não perca tempo: descubra hoje mesmo nossas promoções e leve para casa os melhores produtos do mercado!</p>
 
         </section>
-        <section id="anime-list">
+        <section id="product-list">
             <h2>Principais produtos</h2>
             <table>
                 <tr>
-                    <td><img src="" alt=""></td>
-                    <td><img src="" alt=""></td>
-                    <td><img src="" alt=""></td>
+                    <td><img src="../../images/processador-intel-core-i5-10400f-290ghz-430ghz-turbo-10-geracao-6-cores-12-threads-lga-1200-bx8070110400f_96781.jpg" alt=""></td>
+                    <td><img src="../../images/nitro.jpg" alt=""></td>
+                    <td><img src="../../images/monitor.jpg" alt=""></td>
                 </tr>
             </table>
         </section>

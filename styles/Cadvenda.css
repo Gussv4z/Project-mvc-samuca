@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:30px ;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: #7b21d1;
+    border-radius:8px ;
+    padding: 6px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fields{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 400px;
+    height: 35s0px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.field{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.field > input{
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    background-color: #51148a;
+    box-shadow: inset 3px 0px 8px 0px #252525; 
+    padding: 5px;
+    color: #fff;
+    outline: none;
+    caret-color: #252525;
+}
+
+.field > label {
+    font-size: 16px;
+}
+
+.id_venda{
+    grid-column:2 span;
+}
+
+.addres{
+    grid-column:span 2 ;
+}
+

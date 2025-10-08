@@ -29,8 +29,8 @@
                 </div>
                 
                 <div class="camp ">
-                    <label for="nome">Id cliente:</label>
-                    <input type="text" id="nome" name="nome" size="50" maxlength="50">
+                    <label for="id">Id cliente:</label>
+                    <input type="text" id="id" name="id" size="50" maxlength="50">
                 </div>  
                 
                 <div class="camp ">
