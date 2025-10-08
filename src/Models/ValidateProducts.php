@@ -2,7 +2,9 @@
 
 namespace App\Models;
 
-class ValidateProducts{
+use App\Models\Database;
+
+class ValidateProducts extends Database{
 
        
 
